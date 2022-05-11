@@ -8,16 +8,38 @@
     ".NETCoreApp,Version=v3.1": {
       "TestProject2/1.0.0": {
         "dependencies": {
+          "DotNetSeleniumExtras.WaitHelpers": "3.11.0",
+          "HtmlAgilityPack": "1.11.42",
           "Microsoft.NET.Test.Sdk": "16.5.0",
           "NUnit": "3.12.0",
           "NUnit3TestAdapter": "3.16.1",
           "Selenium.Support": "4.1.0",
           "Selenium.WebDriver": "4.1.0",
-          "Selenium.WebDriver.ChromeDriver": "97.0.4692.7100",
-          "Selenium.WebDriverBackedSelenium": "4.1.0"
+          "Selenium.WebDriver.ChromeDriver": "100.0.4896.2000",
+          "Selenium.WebDriverBackedSelenium": "4.1.0",
+          "JetBrains.ReSharper.TestRunner.Abstractions": "2.6.2.0"
         },
         "runtime": {
           "TestProject2.dll": {}
+        }
+      },
+      "DotNetSeleniumExtras.WaitHelpers/3.11.0": {
+        "dependencies": {
+          "Selenium.WebDriver": "4.1.0"
+        },
+        "runtime": {
+          "lib/netstandard2.0/SeleniumExtras.WaitHelpers.dll": {
+            "assemblyVersion": "3.11.0.0",
+            "fileVersion": "3.11.0.0"
+          }
+        }
+      },
+      "HtmlAgilityPack/1.11.42": {
+        "runtime": {
+          "lib/netstandard2.0/HtmlAgilityPack.dll": {
+            "assemblyVersion": "1.11.42.0",
+            "fileVersion": "1.11.42.0"
+          }
         }
       },
       "Microsoft.CodeCoverage/16.5.0": {
@@ -392,7 +414,7 @@
           }
         }
       },
-      "Selenium.WebDriver.ChromeDriver/97.0.4692.7100": {},
+      "Selenium.WebDriver.ChromeDriver/100.0.4896.2000": {},
       "Selenium.WebDriverBackedSelenium/4.1.0": {
         "dependencies": {
           "Selenium.WebDriver": "4.1.0"
@@ -756,6 +778,14 @@
             "fileVersion": "4.6.24705.1"
           }
         }
+      },
+      "JetBrains.ReSharper.TestRunner.Abstractions/2.6.2.0": {
+        "runtime": {
+          "JetBrains.ReSharper.TestRunner.Abstractions.dll": {
+            "assemblyVersion": "2.6.2.0",
+            "fileVersion": "2.6.2.0"
+          }
+        }
       }
     }
   },
@@ -764,6 +794,20 @@
       "type": "project",
       "serviceable": false,
       "sha512": ""
+    },
+    "DotNetSeleniumExtras.WaitHelpers/3.11.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-xc6jVVl5ymgk3ZNWnC/KHxkEup1QpnwYbrwF+NQoCOGERsD8YMlLwmsX4lGhLXCLo/YQTRTIwlKCN9E/doGUNg==",
+      "path": "dotnetseleniumextras.waithelpers/3.11.0",
+      "hashPath": "dotnetseleniumextras.waithelpers.3.11.0.nupkg.sha512"
+    },
+    "HtmlAgilityPack/1.11.42": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-LDc1bEfF14EY2DZzak4xvzWvbpNXK3vi1u0KQbBpLUN4+cx/VrvXhgCAMSJhSU5vz0oMfW9JZIR20vj/PkDHPA==",
+      "path": "htmlagilitypack/1.11.42",
+      "hashPath": "htmlagilitypack.1.11.42.nupkg.sha512"
     },
     "Microsoft.CodeCoverage/16.5.0": {
       "type": "package",
@@ -884,12 +928,12 @@
       "path": "selenium.webdriver/4.1.0",
       "hashPath": "selenium.webdriver.4.1.0.nupkg.sha512"
     },
-    "Selenium.WebDriver.ChromeDriver/97.0.4692.7100": {
+    "Selenium.WebDriver.ChromeDriver/100.0.4896.2000": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-/5wf4Rv9vTmab2qWo3enuYLoumOyVb6+rO0f2hbym+MQzDGYb7GpadhWk/jgNtUf6eFvsqL90TyzXrcCfOhCyQ==",
-      "path": "selenium.webdriver.chromedriver/97.0.4692.7100",
-      "hashPath": "selenium.webdriver.chromedriver.97.0.4692.7100.nupkg.sha512"
+      "sha512": "sha512-5FnNwsh/XjlIIpmVCnKNyrFCZCCw8hjzek0Wifuumhz+Xy5AifFVMPYJ/myP6SZfylkXhQFlDM2S5M9EHHvmRQ==",
+      "path": "selenium.webdriver.chromedriver/100.0.4896.2000",
+      "hashPath": "selenium.webdriver.chromedriver.100.0.4896.2000.nupkg.sha512"
     },
     "Selenium.WebDriverBackedSelenium/4.1.0": {
       "type": "package",
@@ -1163,6 +1207,11 @@
       "sha512": "sha512-A/uxsWi/Ifzkmd4ArTLISMbfFs6XpRPsXZonrIqyTY70xi8t+mDtvSM5Os0RqyRDobjMBwIDHDL4NOIbkDwf7A==",
       "path": "system.xml.xpath.xmldocument/4.3.0",
       "hashPath": "system.xml.xpath.xmldocument.4.3.0.nupkg.sha512"
+    },
+    "JetBrains.ReSharper.TestRunner.Abstractions/2.6.2.0": {
+      "type": "reference",
+      "serviceable": false,
+      "sha512": ""
     }
   }
 }
