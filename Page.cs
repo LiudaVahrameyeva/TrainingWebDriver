@@ -33,18 +33,5 @@ namespace TestProject2
             return isDisplayed;
         }
         
-        public Page WaitUntilVisible(int secondsToWait )
-        {
-
-            var wait = new WebDriverWait(Driver, TimeSpan.FromSeconds(secondsToWait))
-            {
-                Message = $"'control is not visible"
-            };
-            wait.Until(ElementIsVisible(Locator));
-
-            return this;
-        }
-        
-        public static Func<IWebDriver, IWebElement> ElementIsVisible(By locator) => (Func<IWebDriver, IWebElement>) (driver => driver.FindElement(locator));
     }
 }

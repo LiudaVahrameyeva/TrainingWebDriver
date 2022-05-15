@@ -75,10 +75,11 @@ namespace TestProject2
             wait.Until(e => e.FindElement(By.XPath("//input[@id = 'passp-field-passwd']")));
         }
         
-        public void WaitUntilAvatarIsVisible(int secondsToWait)
+        public void WaitUntilNameIsVisible(int secondsToWait)
         {
             WebDriverWait wait = new WebDriverWait(Driver, TimeSpan.FromSeconds(secondsToWait));
-            wait.Until(e => e.FindElement(By.XPath("//div[contains(@class,'desk-notif-card')]//span[@class='avatar__image-wrapper']")));
+            wait.PollingInterval = TimeSpan.FromMilliseconds(300);
+            wait.Until(e => e.FindElement(By.XPath("//span[(@class='username desk-notif-card__user-name')]")));
         }
      
         public void ClickEnter()
