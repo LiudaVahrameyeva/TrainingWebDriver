@@ -14,24 +14,5 @@ namespace TestProject2
         {
             return Driver.FindElement(Locator);
         }
-
-        public bool IsDisplayed()
-        {
-
-            bool isDisplayed;
-
-            try
-            {
-                isDisplayed = Find().Displayed;
-            }
-
-            catch (NoSuchElementException)
-            {
-                isDisplayed = false;
-            }
-            
-            return isDisplayed;
-        }
-        
     }
 }
