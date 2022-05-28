@@ -24,11 +24,6 @@ namespace TestProject2
 
         }
 
-        public WebDriver GetDriver()
-        {
-            return Driver;
-        }
-
         public bool FindButtonIsDisplayed()
         {
             try
