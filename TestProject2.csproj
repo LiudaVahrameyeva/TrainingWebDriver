@@ -15,27 +15,35 @@
         <PackageReference Include="DotNetSeleniumExtras.WaitHelpers" Version="3.11.0" />
         <PackageReference Include="HtmlAgilityPack" Version="1.11.42" />
         <PackageReference Include="NUnit" Version="3.12.0" />
+        <PackageReference Include="NUnit.Allure" Version="1.0.6.1" />
+        <PackageReference Include="NUnit.Allure.Steps" Version="1.0.9" />
         <PackageReference Include="NUnit3TestAdapter" Version="3.16.1" />
         <PackageReference Include="Microsoft.NET.Test.Sdk" Version="16.5.0" />
         <PackageReference Include="Selenium.Support" Version="4.1.0" />
         <PackageReference Include="Selenium.WebDriver" Version="4.1.0" />
-        <PackageReference Include="Selenium.WebDriver.ChromeDriver" Version="100.0.4896.2000" />
+        <PackageReference Include="Selenium.WebDriver.ChromeDriver" Version="102.0.5005.6100" />
         <PackageReference Include="Selenium.WebDriverBackedSelenium" Version="4.1.0" />
         <PackageReference Include="SeleniumWebDriverExtensions" Version="1.0.3" />
     </ItemGroup>
 
     <ItemGroup>
-      <Reference Include="JetBrains.ReSharper.TestRunner.Abstractions, Version=2.6.2.0, Culture=neutral, PublicKeyToken=5c492ec4f3eccde3">
-        <HintPath>..\..\..\..\..\..\Program Files\JetBrains\JetBrains Rider 2021.3.3\lib\ReSharperHost\TestRunner\netcoreapp3.0\JetBrains.ReSharper.TestRunner.Abstractions.dll</HintPath>
-      </Reference>
+        <Reference Include="JetBrains.ReSharper.TestRunner.Abstractions, Version=2.6.2.0, Culture=neutral, PublicKeyToken=5c492ec4f3eccde3">
+            <HintPath>..\..\..\..\..\..\Program Files\JetBrains\JetBrains Rider 2021.3.3\lib\ReSharperHost\TestRunner\netcoreapp3.0\JetBrains.ReSharper.TestRunner.Abstractions.dll</HintPath>
+        </Reference>
     </ItemGroup>
 
     <ItemGroup>
-      <Compile Remove="HtmlNodeExtensions.cs" />
+        <Compile Remove="HtmlNodeExtensions.cs" />
     </ItemGroup>
 
     <ItemGroup>
-      <None Remove=".gitignore" />
+        <None Update="allureConfig.json">
+          <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+        </None>
+    </ItemGroup>
+
+    <ItemGroup>
+        <None Remove=".gitignore" />
     </ItemGroup>
 
 </Project>
