@@ -5,6 +5,7 @@ using System.Linq;
 using System.Threading;
 using JetBrains.ReSharper.TestRunner.Abstractions.Extensions;
 using Microsoft.VisualBasic;
+using NUnit.Allure.Attributes;
 using NUnit.Framework;
 using OpenQA.Selenium;
 using OpenQA.Selenium.Chrome;
@@ -13,6 +14,7 @@ using OpenQA.Selenium.Support.UI;
 
 namespace TestProject2
 {
+    [AllureSuite("Tests for Task 50")]
     public class Task_50
     {
         private static WebDriver driver;
@@ -26,6 +28,7 @@ namespace TestProject2
         
 
         [Test]
+        [AllureTms("Multiselect")]
         public void MultiselectTest()
         { 
             driver = new ChromeDriver();
@@ -53,6 +56,7 @@ namespace TestProject2
         }
 
         [Test]
+        [AllureTms("Wait for user")]
         public void WaitForUser()
         {
             driver = new ChromeDriver();
@@ -66,6 +70,7 @@ namespace TestProject2
         }
         
         [Test]
+        [AllureTms("Verify Alert")]
         public void VerifyAlert()
         {
             driver = new ChromeDriver();
