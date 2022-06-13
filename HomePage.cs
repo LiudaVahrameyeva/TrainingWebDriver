@@ -10,6 +10,7 @@ public class HomePage
 {
     private readonly IWebDriver driver;
     private readonly string url = "https://www.yandex.com/";
+    private IWebElement SearchField => driver.FindElement(By.XPath("//input[contains(@class,'input__control')]"));
     
     [FindsBy(How = How.ClassName, Using = "desk-notif-card__login-new-item-title")]
     private IWebElement Login { get; set; }
@@ -35,5 +36,9 @@ public class HomePage
         return Login.Displayed;
     }
 
+    public void SetSearchValue(string searchValue)
+    {
+        SearchField.SendKeys(searchValue);
+    }
 }
 
