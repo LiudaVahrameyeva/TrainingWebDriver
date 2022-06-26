@@ -1,0 +1,23 @@
+
+{
+  "settings": {
+  "Browser": "chrome",
+  "CommentBr": "firefox",
+  "Strategy": "local",
+  "CommentStr1": "saucelabs",
+  "CommentStr2": "selenoid"
+},
+  "userInfo": {
+    "Login": "autoTest007@tut.by",
+    "Password": "agent007",
+    "Firstname": "James",
+    "LastName": "Bond",
+    "Address": "Wellington Square",
+    "City": "London",
+    "State": "Ohio",
+    "Zip": "43140",
+    "Country": "United States",
+    "PhoneMobile": "007007007",
+    "AddressAlias": "Home"
+  }
+}
